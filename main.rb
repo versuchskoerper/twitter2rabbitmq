@@ -14,6 +14,7 @@ connection_details = {
   :auth_mechanism => "PLAIN"
 }
 
+# http://rubybunny.info/articles/exchanges.html
 conn = Bunny.new(connection_details)
 conn.start # establish connection to rabbitmq
 ch = conn.create_channel
